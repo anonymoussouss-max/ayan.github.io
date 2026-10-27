@@ -1,0 +1,15 @@
+#ame-mood { display:block; text-align:center; font:600 11px monospace; color:#713448; background:#fff0f6; border:1px solid #eab5c8; border-radius:12px; padding:3px 8px; }
+#ame-widget[data-mood="proud"] #ame-gif { filter:drop-shadow(0 0 9px #f6b55d); }
+#ame-widget[data-mood="worried"] #ame-gif { filter:drop-shadow(0 0 8px #8baee6); }
+#ame-widget[data-mood="sulking"] #ame-gif { filter:saturate(.45) drop-shadow(0 0 6px #b19acf); }
+#ame-sticker { position:absolute; top:0; right:0; font-size:24px; pointer-events:none; }
+#ame-widget.ame-focused { left:auto!important; top:auto!important; bottom:80px!important; right:12px!important; width:76px; }
+#ame-widget.ame-focused #ame-gif { width:68px; height:68px; }
+#ame-widget.ame-focused #ame-stat { display:none; }
+#ame-widget.ame-focused #ame-chat { right:0; max-width:calc(100vw - 24px); }
+#ame-journal { margin:24px auto 110px; width:min(680px,calc(100% - 32px)); border:1px solid #d99bb0; border-radius:20px; background:#fff7fa; color:#54283a; padding:18px; font:14px/1.65 system-ui,sans-serif; }
+#ame-journal summary { cursor:pointer; font-weight:700; }
+#ame-journal article { border-top:1px solid #ecd4de; padding:12px 0; }
+#ame-journal h3 { font-size:13px; font-weight:700; }
+#ame-journal p { white-space:pre-wrap; }
+@media (prefers-reduced-motion:reduce) { #ame-gif { animation:none!important; transition:none!important; } }
